@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolShare Platform</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="search.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ToolShare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="scrollToSection('hero')">Home</a></li>
+                <li><a href="#" onclick="scrollToSection('search-section')">Browse Tools</a></li>
+                <li><a href="#" onclick="scrollToSection('how-it-works')">How It Works</a></li>
+                <li><a href="#" onclick="scrollToSection('footer')">About Us</a></li>
+                <li><a href="/getstarted.html">Sign Up / Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="hero" class="hero">
+        <h2>Share, Borrow, or Rent Tools & Resources</h2>
+        <p>Promoting Sustainability and Community Collaboration.</p>
+        <a href="/mainpage.html" target="_blank"><button>Get Started</button></a>
+    </div>
+
+  <!--- <div id="search-section" class="search-section">
+        <input type="text" id="searchInput" placeholder="Search for tools, categories, or locations">
+        <button onclick="searchTools()">Search</button>
+    </div>
+
+   
+    <script src="search.js"></script>-->
+</body>
+
+    <div id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <p>List Your Tools, Find Tools, Connect & Share.</p>
+    </div>
+
+    <footer id="footer">
+        <ul>
+            <li><a href="#" onclick="scrollToSection('hero')">Home</a></li>
+            <li><a href="#" onclick="scrollToSection('search-section')">Browse Tools</a></li>
+            <li><a href="#" onclick="scrollToSection('how-it-works')">How It Works</a></li>
+            <li><a href="#" onclick="scrollToSection('footer')">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            function searchTools() {
+                const searchInput = document.getElementById('searchInput').value;
+                alert(`Searching for: ${searchInput}`);
+                // Implement actual search functionality here
+            }
+        </script>
+        <script src="script3.js"></script>
+
+</body>
+
+</html>

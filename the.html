@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolShare Platform - Tool Details</title>
+    <link rel="stylesheet" href="the.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>ToolShare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tool-list.html">Browse Tools</a></li>
+                <li><a href="#" onclick="scrollToSection('how-it-works')">How It Works</a></li>
+                <li><a href="#" onclick="scrollToSection('footer')">About Us</a></li>
+                <li><a href="getstarted.html">Sign Up / Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tool-details">
+        <h2>Hammer</h2>
+        <img src="hammar.png" alt="Hammer">
+        <p>Description: A tool used for driving nails, breaking objects apart, or for general construction tasks.</p>
+        <p>Rent Price: ₹100 per day</p>
+        <button>Add to Cart</button>
+        <button>Rent Now</button>
+
+        <label for="rentDays">Rent Days:</label>
+        <input type="number" id="rentDays" name="rentDays" min="1" value="1">
+
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>

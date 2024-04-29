@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="search-section" class="search-section">
+        <input type="text" id="searchInput" placeholder="Search for tools, categories, or locations">
+        <button onclick="searchTools()">Search</button>
+    </div>
+
+    <div>
+        <img src="hammar.png" alt="error">
+        <img src="screwdriver.png" alt="error">
+        <img src="saw.png" alt="error">
+        <img src="wrench.png" alt="error">
+        <img src="plieres.png" alt="error">
+        <img src="drill.png" alt="error">
+    </div>
+    <div id="toolList" class="tool-list">
+        <!-- Tool listings will be dynamically added here -->
+    </div>
+    <div>
+        Rent Price: ₹100 per day
+        Rent Price: ₹150 per day
+        Rent Price: ₹100 per day
+        Rent Price: ₹80 per day
+        Rent Price: ₹90 per day
+        Rent Price: ₹100 per day
+    </div>
+
+    <script src="search.js"></script>
+</body>
+
+
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            function searchTools() {
+                const searchInput = document.getElementById('searchInput').value;
+                alert(`Searching for: ${searchInput}`);
+                // Implement actual search functionality here
+            }
+        </script>
+        <script src="script3.js"></script>
+</body>
+</html>

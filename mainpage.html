@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Rental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="search-section" class="search-section">
+        <input type="text" id="searchInput" placeholder="Search for tools, categories, or locations">
+        <button onclick="searchTools()">Search</button>
+        <ul id="search-results"></ul>
+    </div>
+
+    <div class="tool-list">
+        <div class="tool">
+            <img src="hammar.png" alt="Hammer">
+            <a href="/the.html"><h3>Hammer</h3></a>
+            <p>Rent Price: ₹100 per day</p>
+        </div>
+        <div class="tool">
+            <img src="screwdriver.png" alt="Screwdriver">
+            <h3>Screwdriver</h3>
+            <p>Rent Price: ₹150 per day</p>
+        </div>
+        <div class="tool">
+            <img src="saw.png" alt="Saw">
+            <h3>Saw</h3>
+            <p>Rent Price: ₹100 per day</p>
+        </div>
+        <div class="tool">
+            <img src="wrench.png" alt="Wrench">
+            <h3>Wrench</h3>
+            <p>Rent Price: ₹80 per day</p>
+        </div>
+        <div class="tool">
+            <img src="plieres.png" alt="Pliers">
+            <h3>Pliers</h3>
+            <p>Rent Price: ₹90 per day</p>
+        </div>
+        <div class="tool">
+            <img src="drill.png" alt="Drill">
+            <h3>Drill</h3>
+            <p>Rent Price: ₹100 per day</p>
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>
